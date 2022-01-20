@@ -4,6 +4,7 @@
   --color-accent: #2196f3;
   --color-bg-dark: #2f303a;
   --color-bg-light: #f5f4fa;
+  --color-socials: #afb1b8;
 
   --color-white: #ffffff;
 
@@ -38,6 +39,7 @@
   --gap-8: 8px;
   --gap-9: 9px;
   --gap-10: 10px;
+  --gap-16: 16px;
   --gap-20: 20px;
   --gap-22: 22px;
   --gap-24: 24px;
@@ -47,6 +49,7 @@
   --gap-50: 50px;
   --gap-46: 46px;
   --gap-60: 60px;
+  --gap-70: 70px;
   --gap-93: 93px;
   --gap-94: 94px;
 
@@ -168,26 +171,48 @@ h2 {
   align-items: center;
 }
 
+.contact-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-contact-link {
   color: var(--color-secondary);
+  fill: var(--color-secondary);
   font-size: var(--font-14);
   line-height: var(--l-height-16);
   font-weight: var(--font-normal);
   letter-spacing: var(--l-spacing-02);
-  transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out, fill 250ms ease-in-out;
 }
 
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--color-accent);
+  fill: var(--color-accent);
+}
+
+.header-contact-link svg {
+  margin-right: var(--gap-10);
 }
 
 /* Hero */
 
 .hero {
-  background: var(--color-bg-dark);
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+  max-width: 1600px;
   height: 37.5rem;
   position: relative;
+}
+
+.overlay {
+  height: inherit;
+  background: rgba(47, 48, 58, 0.4);
 }
 
 .hero-content {
@@ -252,6 +277,10 @@ h2 {
   letter-spacing: var(--l-spacing-03);
 }
 
+.about-svg {
+  margin-bottom: var(--gap-30);
+}
+
 /* What we do */
 
 .what-we-do {
@@ -292,7 +321,6 @@ h2 {
   color: var(--color-secondary);
   font-size: var(--font-16);
   line-height: var(--l-height-19);
-  padding-bottom: var(--gap-30);
 }
 
 .team-content-item {
@@ -303,6 +331,64 @@ h2 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   transition: box-shadow 250ms ease-in-out, background 250ms ease-in-out;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--gap-16);
+  padding-bottom: var(--gap-30);
+}
+
+.team-list-link {
+  fill: var(--color-socials);
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: fill 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.team-list-item:not(:last-of-type) {
+  margin-right: var(--gap-10);
+}
+
+.team-list-link:hover {
+  fill: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+/* clients */
+
+.clients {
+  text-align: center;
+}
+
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-list-item:not(:last-of-type) {
+  padding-right: var(--gap-30);
+}
+
+.client-list-link {
+  fill: var(--color-socials);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-socials);
+  border-radius: var(--border-r-4);
+  transition: fill 250ms ease-in-out, border 250ms ease-in-out;
+}
+
+.client-list-link:hover {
+  fill: var(--color-accent);
+  border: 1px solid var(--color-accent);
 }
 
 /* Footer */
@@ -317,6 +403,7 @@ h2 {
   padding-top: var(--gap-60);
   padding-bottom: var(--gap-60);
   padding-left: var(--gap-30);
+  display: flex;
 }
 
 .footer-logo {
@@ -330,6 +417,47 @@ h2 {
 
 address {
   margin-top: var(--gap-20);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--gap-16);
+  padding-bottom: var(--gap-30);
+}
+
+.footer-list-link {
+  fill: var(--color-white);
+  background: rgba(255, 255, 255, 0.1);
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 250ms ease-in-out;
+}
+
+.footer-list-item:not(:last-of-type) {
+  margin-right: var(--gap-10);
+}
+
+.footer-list-link:hover {
+  background-color: var(--color-accent);
+}
+
+.footer-heading {
+  color: var(--color-white);
+  font-size: var(--font-14);
+  font-weight: var(--font-bold);
+  line-height: var(--l-height-16);
+  letter-spacing: var(--l-spacing-03);
+  text-transform: uppercase;
+}
+
+.right-footer {
+  margin-left: var(--gap-70);
+  padding-top: var(--gap-8);
 }
 
 .footer-contact-link:not(:last-child) {
