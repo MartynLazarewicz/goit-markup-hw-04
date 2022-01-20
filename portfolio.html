@@ -32,18 +32,30 @@
         <nav class="nav">
           <a class="header-logo" href="index.html"><span class="accent">Web</span>Studio</a>
           <ul>
-            <li><a class="nav-link" href="index.html">Agencja</a></li>
+            <li>
+              <a class="nav-link" href="index.html">Agencja</a>
+            </li>
             <li><a class="nav-link active-link" href="portfolio.html">Portfolio</a></li>
             <li><a class="nav-link" href="#">Kontakt</a></li>
           </ul>
         </nav>
         <div>
           <ul class="contact">
-            <li class="contact-link">
-              <a class="header-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="contact-list">
+              <a class="header-contact-link mail" href="mailto:info@devstudio.com">
+                <svg width="20" height="20">
+                  <use href="images/sprite.svg#icon-envelope" width="20" height="20"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li>
-              <a class="header-contact-link" href="tel:+48111111111">+48 111 111 111</a>
+            <li class="contact-list">
+              <a class="header-contact-link phone" href="tel:+48111111111">
+                <svg width="20" height="20">
+                  <use href="images/sprite.svg#icon-smartphone" width="20" height="20"></use>
+                </svg>
+                +48 111 111 111
+              </a>
             </li>
           </ul>
         </div>
@@ -137,18 +149,53 @@
     </main>
     <footer class="footer">
       <div class="container footer-content">
-        <a class="footer-logo" href="index.html"><span class="accent">Web</span>Studio</a>
-        <address>
-          <ul>
-            <li class="footer-contact-link">m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li class="footer-contact-link">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <div class="left-footer">
+          <a class="footer-logo" href="index.html"><span class="accent">Web</span>Studio</a>
+          <address>
+            <ul>
+              <li class="footer-contact-link">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer-contact-link">
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="footer-contact-link">
+                <a href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="right-footer">
+          <h4 class="footer-heading">Dołącz do nas</h4>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a class="footer-list-link" href="#">
+                <svg width="20" height="20">
+                  <use href="images/sprite.svg#icon-instagram" width="20" height="20"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-contact-link">
-              <a href="tel:+48111111111">+48 111 111 111</a>
+            <li class="footer-list-item">
+              <a class="footer-list-link" href="#">
+                <svg width="20" height="20">
+                  <use href="images/sprite.svg#icon-twitter" width="20" height="20"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-list-link" href="#">
+                <svg width="20" height="20">
+                  <use href="images/sprite.svg#icon-facebook" width="20" height="20"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-list-link" href="#">
+                <svg width="20" height="20">
+                  <use href="images/sprite.svg#icon-linkedin" width="20" height="20"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
