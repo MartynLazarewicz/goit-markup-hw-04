@@ -355,7 +355,8 @@ h2 {
   margin-right: var(--gap-10);
 }
 
-.team-list-link:hover {
+.team-list-link:hover,
+.team-list-link:focus {
   fill: var(--color-white);
   background-color: var(--color-accent);
 }
@@ -386,7 +387,8 @@ h2 {
   transition: fill 250ms ease-in-out, border 250ms ease-in-out;
 }
 
-.client-list-link:hover {
+.client-list-link:hover,
+.client-list-link:focus {
   fill: var(--color-accent);
   border: 1px solid var(--color-accent);
 }
@@ -442,7 +444,8 @@ address {
   margin-right: var(--gap-10);
 }
 
-.footer-list-link:hover {
+.footer-list-link:hover,
+.footer-list-link:focus {
   background-color: var(--color-accent);
 }
 
