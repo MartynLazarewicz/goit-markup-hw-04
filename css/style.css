@@ -200,19 +200,15 @@ h2 {
 /* Hero */
 
 .hero {
-  background-image: url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
   margin: 0 auto;
   max-width: 1600px;
   height: 37.5rem;
   position: relative;
-}
-
-.overlay {
-  height: inherit;
-  background: rgba(47, 48, 58, 0.4);
 }
 
 .hero-content {
